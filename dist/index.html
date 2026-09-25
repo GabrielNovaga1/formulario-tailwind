@@ -14,11 +14,58 @@
             <h1 class="font-title text-4xl font-bold">Space Travel</h1>
             
             <figure class="flex gap-4">
-                <img class="size-10 rounded-full" src="./images/astro01.jpg" alt="Astronauta-1">
-                <img class="size-10 rounded-full" src="./images/astro02.jpg" alt="Astronauta-2">
-                <img class="size-10 rounded-full" src="./images/astro03.jpg" alt="Astronauta-3">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 " src="./images/astro01.jpg" alt="Astronauta-1">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 " src="./images/astro02.jpg" alt="Astronauta-2">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 " src="./images/astro03.jpg" alt="Astronauta-3">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 "
+                    src="./images/astro04.jpg" alt="Astronauta-4">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 "
+                    src="./images/astro05.jpg" alt="Astronauta-5">
+                <img class="size-10 rounded-full border-2 border-cyan-300 object-cover cursor-pointer hover:animate-spin duration-1000 transition hover:border-rose-600 "
+                    src="./images/astro06.jpg" alt="Astronauta-6">
             </figure>
         </header>
+
+        <!-- Formulario -->
+
+        <form id="formViagem" name="formViagem" method="get" action="" class="mb-10 mt-5">
+            <p class=" mb-5 text-center font-medium text-cyan-300 text-balance lg:text-left">Preencha os dados abaixo para confirmar sua viagem espacial</p>
+        </form>
+
+        <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
+            <legend class="px-2 font-title text-lg font-bold text-cyan-300">01. Dados do viajante</legend>
+            <div class="grid grid-cols-1">
+                <div>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="10" maxlength="30" required>
+                </div>
+
+                <div>
+                    <label for="codigoAcesso">Código de Acesso</label>
+                    <input type="text" id="codigoAcesso" name="codigoAcesso" placeholder="Digite seu código minlength="10" maxlength="30" required">
+                </div>
+
+                <div>
+                    <label for="dataViagem">Data da viagem</label>
+                    <input type="date" id="dataViagem" name="dataViagem" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email" minlength="10" maxlength="30" required>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+
     </main>
 </body>
 </html>
