@@ -34,38 +34,43 @@
 
         <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
             <legend class="px-2 font-title text-lg font-bold text-cyan-300">01. Dados do viajante</legend>
-            <div class="grid grid-cols-1">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
                 <div>
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="10" maxlength="30" required>
+                    <label class="block ml-2 text-sm text-slate-300 my-1" for="nome">Nome Completo</label>
+                    <input class="border w-full border-white/10 bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400 focus:bg-white/10" type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="10" maxlength="30" required>
                 </div>
 
                 <div>
-                    <label for="codigoAcesso">Código de Acesso</label>
-                    <input type="text" id="codigoAcesso" name="codigoAcesso" placeholder="Digite seu código minlength="10" maxlength="30" required">
+                    <label class="block ml-2 text-sm text-slate-300 my-1" for="codigoAcesso">Código de Acesso</label>
+                    <input class="border w-full border-white/10 bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400 focus:bg-white/10" type="password" id="codigoAcesso" name="codigoAcesso" placeholder="Digite seu código" minlength="10" maxlength="30" required">
                 </div>
 
                 <div>
-                    <label for="dataViagem">Data da viagem</label>
-                    <input type="date" id="dataViagem" name="dataViagem" required>
+                    <label class="block ml-2 text-sm text-slate-300 my-1" for="dataViagem">Data da viagem</label>
+                    <input class="border w-full border-white/10 bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400 focus:bg-white/10" type="date" id="dataViagem" name="dataViagem" required>
                 </div>
 
                 <div>
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Digite seu email" minlength="10" maxlength="30" required>
+                    <label class="block ml-2 text-sm text-slate-300 my-1" for="email">E-mail</label>
+                    <input class="border w-full border-white/10 bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400 focus:bg-white/10" type="email" id="email" name="email" placeholder="Digite seu email" maxlength="30" required>
                 </div>
-
             </div>
         </fieldset>
-
-        <fieldset>
-            <legend></legend>
-        </fieldset>
-
-        <fieldset>
-            <legend></legend>
-        </fieldset>
-
+    
+    
+    <fieldset class="border-2 my-8 border-white/10 bg-white/5 p-4 rounded-2xl">
+        <legend class="px-2 font-title text-lg font-bold text-cyan-300">02. Detalhes da viagem</legend>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
+            <div>
+                <label class="block ml-2 text-sm text-slate-300 my-1" for="destino">Destino</label>
+                <select name="destino" id="destino" required class="w-full border border-white/10 bg-slate-950 px-4 py-3 outline-none focus:border-cyan-400">
+                    <option value="0" disabled selected>Selecione um destino</option>
+                    <option value="LUA">Lua</option>
+                    <option value="MARTE">Marte</option>
+                    <option value="ORION">Orion</option>
+                    <option value="TITAN">Titan</option>
+                </select>
+            </div>    
     </main>
 </body>
 </html>
