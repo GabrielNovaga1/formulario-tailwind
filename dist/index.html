@@ -58,19 +58,80 @@
         </fieldset>
     
     
-    <fieldset class="border-2 my-8 border-white/10 bg-white/5 p-4 rounded-2xl">
-        <legend class="px-2 font-title text-lg font-bold text-cyan-300">02. Detalhes da viagem</legend>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
-            <div>
-                <label class="block ml-2 text-sm text-slate-300 my-1" for="destino">Destino</label>
-                <select name="destino" id="destino" required class="w-full border border-white/10 bg-slate-950 px-4 py-3 outline-none focus:border-cyan-400">
-                    <option value="0" disabled selected>Selecione um destino</option>
-                    <option value="LUA">Lua</option>
-                    <option value="MARTE">Marte</option>
-                    <option value="ORION">Orion</option>
-                    <option value="TITAN">Titan</option>
-                </select>
-            </div>    
+        <fieldset class="border-2 my-8 border-white/10 bg-white/5 p-4 rounded-2xl">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">02. Detalhes da viagem</legend>
+                <section class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
+                    <div>
+                        <label class="block ml-2 text-sm text-slate-300 my-1" for="destino">Destino</label>
+                        <select name="destino" id="destino" required class="w-full border rounded-lg border-white/10 bg-slate-950 px-4 py-3 outline-none focus:border-cyan-400">
+                            <option value="0" disabled selected>Selecione um destino</option>
+                            <option value="LUA">Lua</option>
+                            <option value="MARTE">Marte</option>
+                            <option value="ORION">Orion</option>
+                            <option value="TITAN">Titan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block ml-2 text-sm text-slate-300 my-1" for="nave">Nave Preferida</label>
+                        <input
+                            class="border w-full border-white/10 bg-slate-950/60 px-4 py-3 rounded-lg outline-none focus:border-cyan-400 focus:bg-white/10"
+                            type="text" id="nave" name="nave" placeholder="Digite ou selecione sua nave" minlength="10"
+                            maxlength="30" list="listaNaves" required>
+                            <datalist id="listaNaves">
+                                <option value="Millenium"></option>
+                                <option value="Orion X1"></option>
+                                <option value="Galatica"></option>
+                                <option value="Star Voyage"></option>
+                                <option value="Onix 2000"></option>
+                                <option value="Cosmos"></option>
+                                <option value="Maverick 1970"></option>
+                            </datalist>
+                    </div> 
+                </section>
+                    <section>
+                        <p class="block ml-2 text-sm text-slate-300 mt-2 mb-1">Classe da viagem</p>
+                        <div class="my-2 grid grid-cols-1 gap-6 md:grid-cols-3 ">
+                            <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                                <input type="radio" name="classeViagem" value="economica" class="size-4 accent-cyan-400">
+                                <span>Econômica</span>
+                            </label>
+                            
+                            <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                                <input type="radio" name="classeViagem" value="executiva" class="size-4 accent-cyan-400">
+                                <span>Executiva</span>
+                            </label>
+                            
+                            <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                                <input type="radio" name="classeViagem" value="luxo" class="size-4 accent-cyan-400">
+                                <span>Luxo</span>
+                            </label>
+                        </div>
+                    </section>
+                <section>
+                    <p class="block ml-2 text-sm text-slate-300 mt-2 mb-1">Serviços adicionais</p>
+                    <div class="my-2 grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="hotelEspacial" class="size-4 accent-cyan-400">
+                            <span>Hotel Espacial</span>
+                        </label>
+                
+                        <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="passeioLunar" class="size-4 accent-cyan-400">
+                            <span>Passeio lunar</span>
+                        </label>
+                
+                        <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="guiaEspacial" class="size-4 accent-cyan-400">
+                            <span>Guia Espacial</span>
+                        </label>
+
+                        <label class="flex items-center cursor-pointer gap-3 bg-slate-950/60 p-4 rounded-lg hover:bg-white/10">
+                            <input type="checkbox" name="servicos" value="SeguroInterplanetario" class="size-4 accent-cyan-400">
+                            <span>Seguro Interplanetário</span>
+                        </label>
+                    </div>
+                </section>
+        </fieldset>
     </main>
 </body>
 </html>
